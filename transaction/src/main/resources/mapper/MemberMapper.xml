@@ -3,12 +3,13 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zhumj.mybatis.mapper.MemberMapper">
+<mapper namespace="MemberMapper">
 
-
-    <select id="count" resultType="java.lang.Integer">
-        select count(*)
-        from member
+    <update id="updateName">
+        update member
+        set name = #{name},
+        gmt_modified = now()
         where id = #{id}
-    </select>
+    </update>
+
 </mapper>

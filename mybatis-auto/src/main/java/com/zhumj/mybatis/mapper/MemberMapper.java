@@ -1,4 +1,4 @@
-package com.zhumj.mapper;
+package com.zhumj.mybatis.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 
